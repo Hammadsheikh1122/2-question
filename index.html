@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover</title>
+
+    <style>
+        /* Normal class */
+        .box {
+            width: 300px;
+            padding: 20px;
+            background-color: black;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        /* Hover ke baad wali class */
+        .box-hover {
+            width: 300px;
+            padding: 20px;
+            background-color: green;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .box img {
+            width: 200px;
+            transition: 0.5s;
+        }
+
+        .box-hover img {
+            width: 300px;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="box">
+        <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+            alt="Headphone"
+            onmouseover="changeClass()"
+            onmouseout="normalClass()"
+        >
+
+        <h2 style="color: white;">Headphone</h2>
+    </div>
+
+
+    <script>
+        function changeClass() {
+            document.getElementById("box").className = "box-hover";
+        }
+
+        function normalClass() {
+            document.getElementById("box").className = "box";
+        }
+    </script>
+
+</body>
+</html>
