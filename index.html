@@ -3,35 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Hover</title>
+    <title>My Project</title>
 
     <style>
-        /* Normal class */
         .box {
             width: 300px;
             padding: 20px;
             background-color: black;
             text-align: center;
-            transition: 0.5s;
         }
 
-        /* Hover ke baad wali class */
         .box-hover {
             width: 300px;
             padding: 20px;
             background-color: green;
             text-align: center;
-            transition: 0.5s;
         }
 
         .box img {
             width: 200px;
-            transition: 0.5s;
         }
 
         .box-hover img {
             width: 300px;
-            transition: 0.5s;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            background-color: lightgray;
+            margin-top: 30px;
+        }
+
+        .box2-large {
+            width: 500px;
+            height: 350px;
+            padding: 20px;
+            background-color: lightgreen;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -39,6 +49,7 @@
 <body>
 
     <div class="box" id="box">
+
         <img
             src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
             alt="Headphone"
@@ -47,6 +58,18 @@
         >
 
         <h2 style="color: white;">Headphone</h2>
+
+    </div>
+
+
+    <div class="box2" id="box2">
+
+        <h1>My Heading</h1>
+
+        <p>My paragraph</p>
+
+        <button onclick="changeClass2()">Click Me</button>
+
     </div>
 
 
@@ -58,7 +81,19 @@
         function normalClass() {
             document.getElementById("box").className = "box";
         }
+
+        function changeClass2() {
+            document.getElementById("box2").className = "box2-large";
+        }
     </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
